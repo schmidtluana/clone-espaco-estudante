@@ -1,2 +1,2 @@
-# clone-espaco-estudante
-Clone do portal do espaço do estudante do SESI-SENAI
+# clone-espa-o-estudante
+Clone da página do espaço do estudante
