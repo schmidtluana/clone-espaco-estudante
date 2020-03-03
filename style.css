@@ -19,7 +19,7 @@ h1{
 }
 .login{
     width: 250px;
-    height: 360px;
+    height: 380px;
     border: 1px solid #9BABB7 ;
     border-radius: 4px;
     margin: 45px 0 0 200px;
@@ -86,10 +86,4 @@ display: flex;
     color:#9BABB7;
     margin: 0;
 
-}
-.frase{
-    width: 500px;
-    height: 300px;
-    margin: 100px, 0, 0, 50px;
-    color: crimson;
 }

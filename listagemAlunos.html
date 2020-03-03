@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação de alunos da turma ténico
+        em desenvolvimento de software - 2019/2020</title>
+    
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <h1>Relação de Alunos 2020</h1>
+        <ul>
+            <li v-for="aluno in alunos">
+                {{ aluno.nome }}
+            </li>
+        </ul>
+
+        <div id="app">
+            <p>{{ nome }}</p>
+            <input v-model="nome">           
+           
+        </div>
+
+        <div id="app">
+            <p>{{ codigo }}</p>
+            <input v-model="Código">
+                  
+        
+        </div>
+
+       
+        <button id="btn" @click="salvar">salvar</button> <br><br>
+          
+
+        <table style="border: 1px solid gray;">
+            <thead style="background-color: grey;">
+                <th>Código</th>
+                <th>Nome</th>
+            </thead>
+            <tbody>
+                <tr v-for="aluno in alunos">
+                    <td>
+                        {{aluno.codigo}}
+                    </td>
+                    <td>
+                        {{aluno.nome}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data: {
+                alunos: [{
+                    codigo: 1,
+                    nome: "Luana"
+                }, {
+                    codigo: 2,
+                    nome: "Julia"
+                }, {
+                    codigo: 3,
+                    nome: "Mayara"
+                }]
+            }, methods: {
+                salvar: function(){
+                this.alunos.push()
+            }
+        }
+      
+        })
+    </script>
+    
+</body>
+</html>
