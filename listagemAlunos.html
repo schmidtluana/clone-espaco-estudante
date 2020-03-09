@@ -13,27 +13,15 @@
     
     <div id="app">
         <h1>Relação de Alunos 2020</h1>
+
+        <input type="text" v-model="codigo">
+        <input type="text" v-model="nome">
+        <button v-on:click="salvar">Cadastrar</button>
         <ul>
-            <li v-for="aluno in alunos">
+            <li v-for="aluno in alunos" style="list-style-type: square;">
                 {{ aluno.nome }}
             </li>
-        </ul>
-
-        <div id="app">
-            <p>{{ nome }}</p>
-            <input v-model="nome">           
-           
-        </div>
-
-        <div id="app">
-            <p>{{ codigo }}</p>
-            <input v-model="Código">
-                  
-        
-        </div>
-
-       
-        <button id="btn" @click="salvar">salvar</button> <br><br>
+        </ul>       
           
 
         <table style="border: 1px solid gray;">
@@ -51,6 +39,12 @@
                     </td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr v-if="alunos.length == 0">
+                    <td colspan="2">Nenhum aluno cadastrado               
+                    </td>
+                </tr>
+            </tfoot>
         </table>
        
     </div>
@@ -59,21 +53,21 @@
         let app = new Vue({
             el: "#app",
             data: {
-                alunos: [{
-                    codigo: 1,
-                    nome: "Luana"
-                }, {
-                    codigo: 2,
-                    nome: "Julia"
-                }, {
-                    codigo: 3,
-                    nome: "Mayara"
-                }]
-            }, methods: {
+                alunos: [], 
+                codigo: '',
+                nome: '',
+                
+            }, methods:{
                 salvar: function(){
-                this.alunos.push()
+                    this.alunos.push({
+                        codigo: this.codigo,
+                        nome: this.nome
+                    })
+                    this.codigo = ''
+                    this.nome = ''
+                }
             }
-        }
+        
       
         })
     </script>

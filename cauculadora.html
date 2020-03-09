@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app_calculadora">
+
+        <h1>Calculadora</h1>
+        <input type="number" placeholder="Primeiro Número" v-model='primeiro'><br><br>
+        <input type="number" placeholder="Segundo Número" v-model='segundo'><br><br>
+       
+    <select v-model="selected"> 
+        <option disabled value="">Escolha um item</option>
+        <option value="+">Somar</option>
+        <option value="/">Dividir</option>
+        <option value="-">Subtrair</option>
+        <option value="*">Multiplicar</option>
+      </select>
+      <br>
+    
+      <button @click="calcular">Calcular</button> <br><br>
+      <span>{{ resultado }}</span>
+    </div>
+    
+
+    <script>
+        let app_calculadora = new Vue({
+            el: "#app_calculadora",
+            data: {
+                primeiro: '',
+                segundo: '',
+                selected: '',
+                resultado: '',
+            
+        }, methods: {
+            calcular: function(){
+                if(this.selected == '+'){
+                    this.resultado= "O resultado é: " +  (Number(this.primeiro) + Number(this.segundo))  
+               
+                }else if(this.selected == '-'){
+                    this.resultado= "O resultado é: " +  (Number(this.primeiro) - Number(this.segundo))  
+               
+                }else if(this.selected == '/'){
+                    this.resultado= "O resultado é: " +  (Number(this.primeiro) / Number(this.segundo)) 
+                
+                }else if (this.selected == '*'){
+                    this.resultado= "O resultado é: " +  (Number(this.primeiro) * Number(this.segundo))      
+
+            }
+            }
+        }
+        
+        })
+    </script>
+
+</body>
+</html>
