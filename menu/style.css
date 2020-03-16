@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+.menu-superior{
+    margin: 0;
+    display: flex;
+    background: black;
+    color: white;
+    height: 30px;
+    justify-content: center;
+}
+
+.menu-superior li{
+    width: 150px;
+    list-style: none; /*tira a bolinha da frete das palavras*/
+    line-height: 30px; /*altura, tamanho do centro tem que ser igual a altura do menu superior*/
+    cursor: pointer;
+    text-align: center;
+    
+}
+.menu-superior li:hover { /*todos os elemento que tiverem na lista quando eu passsar o mause acontece as seguintes coisas*/
+    background: #E94E1B;
+    text-decoration: underline;
+    
+}

@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    
+}
+.menu-vertical{
+    margin: 0;    
+    background: black;
+    color: white;
+    height: 700px;
+    width: 150px;
+    padding: 0;
+    
+}
+.menu-vertical li{
+    width: 150px;
+    list-style: none; /*tira a bolinha da frete das palavras*/
+    cursor: pointer;
+    text-align: center; /*alinha no centro*/
+    line-height: 30px; /*espaço entre as palavras*/
+   
+    
+}
+.menu-vertical li:hover { /*todos os elemento que tiverem na lista quando eu passsar o mause acontece as seguintes coisas*/
+    background: #E94E1B;
+    text-decoration: underline;
+    
+}
