@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+}
+.Menu_superior{
+    display: flex;
+    background-color:#FF7212;
+    color: white;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#usuario{
+    width: 160px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    color: white;
+   
+    margin: 15px 15px 15px 15px;
+    
+}
+#imagens {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 40px;
+   
+}
+#txt2{
+    margin-top: 19px;
+    margin-left: 200px;
+}
+#txt3{
+    margin: 9px 5px 5px 5px;
+    margin-left: 180px;
+}
+#txt4{
+    margin: 6px 5px 5px 5px;
+    margin-left: 180px;
+    margin-right: 140px;
+}
+
+#caixa{
+    background:steelblue;
+    width: 240px;
+    height: 210px;
+    margin: -230px 100px 400px 780px;
+    justify-content: center;   
+    display: flex;  
+  
+}
+#rosto{
+    position: absolute;    
+    z-index: 100; /** orelha foi pra tras**/
+    width: 170px;
+    height: 90px;
+    margin: 40px;
+    margin-left: 6px;
+    background: #A6BECF;
+    border-radius: 60%;
+    justify-content: center;
+    padding-top: 70px;
+    display: flex; /** fica uma olho do lado do outro**/
+      
+} 
+#nariz{
+    width: 30px;
+    height: 60px;
+    background: #BE845F; ;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 20px; 
+    z-index: 100; 
+}
+.iris{
+    background: black;
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    margin-top: 2px;
+    margin: 6px;
+    justify-content: center;
+  
+  
+}
+
+.olhos{
+background: cornsilk;
+display: flex;
+width: 60px;
+height: 60px;
+border-radius: 30px;
+padding-top: 4px;
+justify-content: center;
+margin-top: -22px;
+
+
+}
+.orelha{
+    background: #A6BECF;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}   
+
+.orelha2{
+    position: absolute;
+    border-radius: 50px;
+    width: 66px;
+    height: 68px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #819CAF;
+  }
+#noticia1{
+    width: 255px;
+    display: flex;
+    height: 110px;
+    border: 2px solid #9BABB7;
+    margin: 100px 40px 10px 40px;
+
+}
+#noticia2{
+    width: 255px;
+    display: flex;
+    height: 110px;
+    border: 2px solid #9BABB7;
+    margin: 13px 70px 10px 40px;
+
+}
+#noticia3{
+    width: 255px;
+    display: flex;
+    height: 110px;
+    border: 2px solid #9BABB7;    
+    margin: -250px 500px 10px 313px;
+
+}
+#noticia4{
+    width: 255px;
+    display: flex;
+    height: 110px;
+    border: 2px solid #9BABB7;
+    margin: 13px 500px 10px 313px;
+
+}
+#texto1{
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: -10px;
+    text-align: center;
+}
+#h4-1{
+color: black;
+text-align: center;
+font-size: 10px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#cabeloE{
+width: 15px;
+height: 15px;
+position: absolute;
+background: #A6BECF;
+margin-top: 28px;
+margin-left: -132px;
+-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+#cabeloD{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background: #A6BECF;
+    margin-top: 29px;
+    margin-left: -110px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
